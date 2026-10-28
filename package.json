@@ -1,0 +1,14 @@
+{
+  "name": "biuh-tee-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prototype: generate Hainan / BiUH T-shirt designs from an asset catalogue; an admin picks which ones get printed.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

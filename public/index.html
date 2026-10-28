@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BiUH Tee Lab</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='6' r='5' fill='%2300a3c9'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23013b5a'/%3E%3Ccircle cx='16' cy='26' r='5' fill='%2300915e'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><strong>BiUH Tee Lab</strong><small>Design a Hainan shirt from the asset catalogue</small></span>
+    </a>
+    <nav><a href="/admin">Print desk</a></nav>
+  </header>
+
+  <main class="studio">
+    <section class="stage">
+      <div class="preview" id="preview" aria-label="Shirt preview"></div>
+      <div class="stage-actions">
+        <button id="surprise" class="primary">Surprise me</button>
+        <button id="remix">New colours</button>
+        <button id="reword">New words</button>
+      </div>
+      <p class="inspired" id="inspired"></p>
+    </section>
+
+    <aside class="panel">
+      <section>
+        <h2>Style</h2>
+        <div id="templates" class="chips"></div>
+      </section>
+      <section>
+        <h2>Colours</h2>
+        <div id="palettes" class="palettes"></div>
+        <h3>Shirt</h3>
+        <div id="shirts" class="shirts"></div>
+      </section>
+      <section>
+        <h2>Words</h2>
+        <div id="fields" class="fields"></div>
+      </section>
+      <section id="slots-section">
+        <h2>Artwork</h2>
+        <div id="slots"></div>
+      </section>
+      <section class="submit">
+        <h2>Send it to the print desk</h2>
+        <form id="submit-form">
+          <label>Design name <input name="title" maxlength="80" placeholder="e.g. Coconut varsity" required></label>
+          <label>Your name <input name="author" maxlength="60" placeholder="A nickname is fine"></label>
+          <button class="primary" type="submit">Submit for print</button>
+          <p class="hint">An admin reviews every submission and picks which ones get printed.</p>
+        </form>
+      </section>
+    </aside>
+  </main>
+
+  <section class="ideas">
+    <div class="ideas-head">
+      <h2>More ideas</h2>
+      <button id="more">Generate 8 more</button>
+    </div>
+    <div id="ideas" class="idea-grid"></div>
+  </section>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/js/generator.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 150" width="460" height="150">
+  <!-- Placeholder wordmark, not the official BiUH logo file -->
+  <circle cx="22" cy="40" r="18"/>
+  <circle cx="22" cy="78" r="18"/>
+  <circle cx="22" cy="116" r="18"/>
+  <text x="60" y="128" font-family="Arial Black, Helvetica Neue, Arial, sans-serif" font-weight="900" font-size="132" letter-spacing="-4">BiUH</text>
+</svg>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Print Desk · BiUH Tee Lab</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='6' r='5' fill='%2300a3c9'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23013b5a'/%3E%3Ccircle cx='16' cy='26' r='5' fill='%2300915e'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body class="admin">
+  <header class="top">
+    <a class="brand" href="/">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><strong>Print desk</strong><small>Review submissions, pick what gets printed</small></span>
+    </a>
+    <nav><a href="/">Generator</a> <button id="logout" class="link" hidden>Log out</button></nav>
+  </header>
+
+  <form id="login" class="login" hidden>
+    <h1>Admin key</h1>
+    <p class="hint">Set with <code>ADMIN_KEY</code> when starting the server (default <code>biuh-admin</code>).</p>
+    <input name="key" type="password" autocomplete="current-password" required>
+    <button class="primary">Open print desk</button>
+  </form>
+
+  <main id="desk" class="desk" hidden>
+    <div class="desk-head">
+      <div id="filters" class="tabs" role="tablist"></div>
+      <button id="refresh">Refresh</button>
+    </div>
+    <div id="designs" class="design-grid"></div>
+
+    <section class="catalogue">
+      <h2>Asset catalogue</h2>
+      <p class="hint">Everything here can be picked in the generator. Recolourable assets are printed as single-colour silhouettes in the chosen palette.</p>
+      <div id="assets" class="catalogue-grid"></div>
+      <form id="upload" class="upload">
+        <h3>Add an asset</h3>
+        <label>File (SVG or PNG) <input name="file" type="file" accept=".svg,.png,image/svg+xml,image/png" required></label>
+        <label>Name <input name="name" maxlength="60" required placeholder="e.g. Sanya lighthouse"></label>
+        <label>Tags <input name="tags" placeholder="icon, palm, island, rocket, coconut, heart, logo, star, decor" value="icon"></label>
+        <label>Credit / licence <input name="credit" maxlength="120" placeholder="Where it comes from"></label>
+        <label class="check"><input name="recolor" type="checkbox" checked> Recolour to palette (use for single-colour silhouettes)</label>
+        <button class="primary">Upload</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/js/admin.js"></script>
+</body>
+</html>

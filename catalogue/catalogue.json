@@ -1,0 +1,110 @@
+[
+  {
+    "id": "hainan-island",
+    "name": "Hainan Island",
+    "file": "hainan-island.svg",
+    "tags": [
+      "island",
+      "icon"
+    ],
+    "recolor": true,
+    "credit": "Outline from DataV.GeoAtlas boundary data (adcode 460000)",
+    "pins": {
+      "lingshui": [
+        0.588,
+        0.863
+      ],
+      "wenchang": [
+        0.951,
+        0.274
+      ],
+      "sanya": [
+        0.37,
+        0.947
+      ],
+      "haikou": [
+        0.697,
+        0.061
+      ],
+      "danzhou": [
+        0.246,
+        0.215
+      ]
+    }
+  },
+  {
+    "id": "coconut-palm",
+    "name": "Coconut palm",
+    "file": "coconut-palm.svg",
+    "tags": [
+      "palm",
+      "icon"
+    ],
+    "recolor": true,
+    "credit": "Wikimedia Commons, Coconut_tree_icon.svg (check license before printing)"
+  },
+  {
+    "id": "coconut-drink",
+    "name": "Coconut drink",
+    "file": "coconut-drink.svg",
+    "tags": [
+      "coconut",
+      "icon"
+    ],
+    "recolor": true,
+    "credit": "Drawn for this prototype"
+  },
+  {
+    "id": "rocket",
+    "name": "Rocket",
+    "file": "rocket.svg",
+    "tags": [
+      "rocket",
+      "icon"
+    ],
+    "recolor": true,
+    "credit": "Drawn for this prototype"
+  },
+  {
+    "id": "heart",
+    "name": "Heart",
+    "file": "heart.svg",
+    "tags": [
+      "heart",
+      "icon"
+    ],
+    "recolor": true,
+    "credit": "Drawn for this prototype"
+  },
+  {
+    "id": "biuh-wordmark",
+    "name": "BiUH wordmark (placeholder)",
+    "file": "biuh-wordmark.svg",
+    "tags": [
+      "logo",
+      "icon"
+    ],
+    "recolor": true,
+    "credit": "Placeholder; replace with the official logo file once approved"
+  },
+  {
+    "id": "waves",
+    "name": "Waves",
+    "file": "waves.svg",
+    "tags": [
+      "decor"
+    ],
+    "recolor": true,
+    "credit": "Drawn for this prototype"
+  },
+  {
+    "id": "star",
+    "name": "Star",
+    "file": "star.svg",
+    "tags": [
+      "star"
+    ],
+    "recolor": true,
+    "credit": "Drawn for this prototype"
+  }
+]
